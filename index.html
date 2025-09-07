@@ -29,22 +29,26 @@
             overflow: hidden;
             text-overflow: ellipsis;
         }
+
         @media (max-width: 600px) {
             .header {
                 font-size: 18px;
                 padding: 10px;
             }
         }
+
         @media (max-width: 400px) {
             .header {
                 font-size: 14px;
                 padding: 8px;
             }
         }
+
         .container {
             max-width: 800px;
             margin: 0 auto;
         }
+
          .circle-image {
             width: 100px;
             height: 100px;
@@ -53,40 +57,55 @@
             margin: 20px auto;
             position: relative;
         }
+
         .circle-image img {
             width: 100%;
             height: 100%;
             object-fit: cover;
         }
+
         .title {
             text-align: center;
             font-size: 24px;
             margin-bottom: 20px;
             color: black;
         }
+
         .card { position: relative; border: 1px solid #ccc; border-radius: 20px; margin: 20px; padding: 30px; background-color: #fff; cursor: pointer; font-size: 20px; font-weight: bold; transition: background-color 0.3s, transform 0.3s; border-left: 6px solid #FFFF02; }
+
         .second-card { font-size: 20px; padding: 25px; width: 75%; margin: 20px auto; border-radius: 10px; border-left: 6px solid #FF5733; }
+         
        .third-card { font-size: 20px; padding: 25px; width: 75%; margin: 20px auto; border-radius: 10px; border-left: 6px solid #FF5733; }
+
         .card svg { position: absolute; top: 50%; right: 20px; transform: translateY(-50%); fill: #FFFF02; }
+
         .second-card svg { fill: #FF5733; }
         .third-card svg { fill: #FF5733; }
+        
+
         .card:hover {
             transform: translateY(-5px);
             box-shadow: 0 4px 10px rgba(113, 51, 255, 0.5), 0 6px 15px rgba(113, 51, 255, 0.3);
         }
+
        .second-card:hover {
            transform: translateY(-5px);
            box-shadow: 0 4px 10px rgba(255, 87, 51, 0.5), 0 6px 15px rgba(255, 87, 51, 0.3);
         }
+        
       .third-card:hover {
            transform: translateY(-5px);
            box-shadow: 0 4px 10px rgba(255, 87, 51, 0.5), 0 6px 15px rgba(255, 87, 51, 0.3);
         }
+        
+
         .subcards {
             display: none;
             padding-left: 20px;
         }
+
        .subcard { position: relative; border: 1px solid #ddd; border-radius: 5px; margin: 10px 0; padding: 10px; background-color: #fff; cursor: pointer; font-size: 15px; font-weight: bold; transition: background-color 1s, transform 1s; border-left: 6px solid #00FFFF; }
+
        .subcard svg {
             position: absolute;
             top: 50%;
@@ -96,19 +115,23 @@
             opacity: 0;
             transition: opacity 0.3s;
        }
+
        .subcard:hover svg {
             opacity: 1;
        }
+
        .subcard:hover {
            transform: translateY(-5px);
            box-shadow: 0 4px 10px rgba(0, 255, 255, 0.5), 0 6px 15px rgba(0, 255, 255, 0.3);
        }
+
       .button-container {
           position: fixed;
           bottom: 20px;
           right: 20px;
           z-index: 1000;
       }
+
       .btn {
           display: flex;
           align-items: center;
@@ -124,20 +147,25 @@
           box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
           text-decoration: none;
       }
+
       .btn svg {
           margin-right: 10px;
       }
+
       .btn:hover {
           background-color: #05a044;
           transform: translateY(-3px);
       }
+
     </style>
 </head>
+
 <body>
     <div class="header">
          <marquee behavior="alternate" direction="left" scrollamount="2" width="100%" height="30" onmouseover="this.stop()" onmouseout="this.start()" loop="10000" style="animation: slide 5s linear infinite alternate; font-size: 2em; color: yellow;">By HACKHEIST 😈</marquee>
     </div>
-    <h2 id="subject-title" class="title">⋆⋇ 𝗟𝗢𝗡𝗗𝗘𝗧𝗜𝗦𝗛𝗨𝗡 ⋇⋆</h2>
+	<h2 id="subject-title" class="title">⋆⋇ 𝗟𝗢𝗡𝗗𝗘𝗧𝗜𝗦𝗛𝗨𝗡 ⋇⋆</h2>
+
   <p style="color:#100916; font-size:16px;">𝗦𝗰𝗿𝗼𝗹𝗹 𝗗𝗼𝘄𝗻 𝗳𝗼𝗿 𝗖𝗼𝗻𝘁𝗮𝗰𝘁 𝗮𝗻𝗱 𝗳𝗼𝗿 𝗖𝗼𝗽𝘆𝗿𝗶𝗴𝗵𝘁 👇👇</p>
 </div>
  <div style="display: flex; justify-content: center; height: 8vh;">
@@ -146,6 +174,7 @@
     <div id="cards-container">
          <!-- Cards div through JS -->
     </div>
+
     <div class="button-container">
          <a href="https://t.me/HIDDEN_OFFICIALS_5/3" class="btn" target="_blank" rel="noopener noreferrer">
          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telegram" viewBox="0 0 16 16">
@@ -160,29 +189,29 @@ const firstcardsData = [
         "text": "BOOKS",
         "secondcards": [
             {
-                "text": "ABHISHEK MALHAN",
+                "text": "ABHISHEK",
                 "subcards": [
                     {
                         "text": "PHYSICS",
-                        "url": "https://t.me/Jaddu2bot?start=Z2V0LS0xMDAyOTI3NzYwNzc5LTIxODktMjE5Mg"
+                        "url": "Z2V0LS04MDIzNDIyMDg2MjMyLTE3NTEyLTE3NTM2"
                     }
                 ]
-            },
+            }
+        ]
+    },
+    {
+        "text": "BOOKS",
+        "secondcards": []
+    },
+    {
+        "text": "NOTES",
+        "secondcards": [
             {
-                "text": "y",
+                "text": "ALLEN",
                 "subcards": [
                     {
-                        "text": "NAMANOP",
-                        "url": "https://t.me/Jaddu2bot?start=Z2V0LS0xMDAyMjYyMDI2ODExLTM5NS0zOTk"
-                    }
-                ]
-            },
-            {
-                "text": "OP",
-                "subcards": [
-                    {
-                        "text": "NAMAN",
-                        "url": "https://t.me/Jaddu2bot?start=Z2V0LS04MDE4MDk2MjE0NDg4LTMxNjAtMzE5Mg"
+                        "text": "Physics",
+                        "url": "https://dusra-aur.github.io/servertokens/?token=Z2V0LS00MzEyNTg5MzcxMzQ5Ny05NDEyNy05NDI1Ng"
                     }
                 ]
             }
@@ -195,9 +224,13 @@ const firstcardsData = [
     {
         "text": "TESTS",
         "secondcards": []
+    },
+    {
+        "text": "TESTS",
+        "secondcards": []
     }
 ];
-function createCard(cardData, isSecondCard = false) {
+        function createCard(cardData, isSecondCard = false) {
     const card = document.createElement('div');
     card.className = 'card';
     card.innerHTML = `
@@ -206,6 +239,7 @@ function createCard(cardData, isSecondCard = false) {
             <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"/>
         </svg>
     `;
+
     if (isSecondCard) {
         card.classList.add('second-card');
         card.addEventListener('click', function () {
@@ -226,29 +260,35 @@ function createCard(cardData, isSecondCard = false) {
             }
         });
     }
+
     const subcardsContainer = document.createElement('div');
     subcardsContainer.className = 'subcards';
+
     cardData.subcards?.forEach(subcardData => {
         const subcard = document.createElement('div');
         subcard.className = 'subcard';
         subcard.innerHTML = `
             ${subcardData.text}
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#00FFFF" class="bi bi-link-45deg" viewBox="0 0 16 16">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#00FFFF" class="bi bi-link-45deg" viewBox="0 0 16 16">
                 <path d="M4.715 6.542a3.025 3.025 0 0 1 0-4.27l1.795-1.796a3.025 3.025 0 0 1 4.271 0l1.795 1.796a3.025 3.025 0 0 1 0 4.27l-.69.691a.5.5 0 1 1-.708-.708l.69-.691a2.025 2.025 0 0 0 0-2.855L10.06 2.12a2.025 2.025 0 0 0-2.855 0L5.412 3.915a2.025 2.025 0 0 0 0 2.855.5.5 0 0 1-.707.707ZM11.284 9.457a3.025 3.025 0 0 1 0 4.271l-1.796 1.795a3.025 3.025 0 0 1-4.27 0L3.923 13.73a3.025 3.025 0 0 1 0-4.271l.69-.69a.5.5 0 0 1 .707.707l-.69.69a2.025 2.025 0 0 0 0 2.855l1.795 1.795a2.025 2.025 0 0 0 2.855 0l1.796-1.795a2.025 2.025 0 0 0 0-2.855.5.5 0 1 1 .707-.707Z"/>
             </svg>
         `;
-        subcard.addEventListener('click', () => window.open(`https://t.me/Jaddu2bot?start=${subcardData.url}`, '_blank'));
+        subcard.addEventListener('click', () => window.open(subcardData.url, '_blank'));
         subcardsContainer.appendChild(subcard);
     });
+
     cardData.secondcards?.forEach(secondCardData => {
         const secondCard = createCard(secondCardData, true);
         subcardsContainer.appendChild(secondCard);
     });
+
     const container = document.createElement('div');
     container.appendChild(card);
     container.appendChild(subcardsContainer);
+
     return container;
 }
+
 function initializeCards() {
     const cardsContainer = document.getElementById('cards-container');
     firstcardsData.forEach(cardData => {
@@ -256,10 +296,11 @@ function initializeCards() {
         cardsContainer.appendChild(card);
     });
 }
+
 initializeCards();
 </script>
-    <div>
-<p style="color: #2C3438; font-size:16px;">𝗡𝗢𝗧𝗘 :- 𝐍𝐨 𝐚𝐧𝐲 𝐂𝐨𝐚𝐜𝐡𝐢𝐧𝐠 𝐡𝐚𝐫𝐦𝐞𝐝 𝐢𝐟 𝐬𝐭𝐢𝐥𝐥 𝐚𝐧𝐲 𝐩𝐫𝐨𝐛𝐥𝐞𝐦 𝐑𝐞𝐥𝐚𝐭𝐞𝐝 𝐭𝐨 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 𝐭𝐡𝐞𝐧 𝐂𝐨𝐧𝐭𝐚𝐜𝐭 𝐦𝐞 𝐨𝐧 𝐓𝐞𝐥𝐞𝐠𝐫𝐮𝐦 𝐈 𝐑𝐞𝐦𝐨𝐯𝐞 𝐂𝐨𝐧𝐭𝐞𝐧𝐭 𝐨𝐫 𝐃𝐨𝐰𝐧 𝐭𝐡𝐢𝐬 𝐰𝐞𝐛𝐬𝐢𝐭𝐞 . 𝐒𝐨, 𝙞𝙛 𝙮𝙤𝙪 𝙝𝙖𝙫𝙚 𝙖𝙣𝙮 𝙥𝙧𝙤𝙗𝙡𝙚𝙢 𝙟𝙪𝙨𝙩 𝙘𝙤𝙣𝙩𝙖𝙘𝙩 𝙢𝙚 🙏🙏</p>
+	<div>
+<p style="color: #2C3438; font-size:16px;">𝗡𝗢𝗧𝗘 :- 𝐍𝐨 𝐚𝐧𝐲 𝐂𝐨𝐚𝐜𝐡𝐢𝐧𝐠 𝐡𝐚𝐫𝐦𝐞𝐝 𝐢𝐟 𝐬𝐭𝐢𝐥𝐥 𝐚𝐧𝐲 𝐩𝐫𝐨𝐛𝐥𝐞𝐦 𝐑𝐞𝐥𝐚𝐭𝐞𝐝 𝐭𝐨 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 𝐭𝐡𝐞𝐧 𝐂𝐨𝐧𝐭𝐚𝐜𝐭 𝐦𝐞 𝐨𝐧 𝐓𝐞𝐥𝐞𝐠𝐫𝐚𝐦 𝐈 𝐑𝐞𝐦𝐨𝐯𝐞 𝐂𝐨𝐧𝐭𝐞𝐧𝐭 𝐨𝐫 𝐃𝐨𝐰𝐧 𝐭𝐡𝐢𝐬 𝐰𝐞𝐛𝐬𝐢𝐭𝐞 . 𝐒𝐨, 𝙞𝙛 𝙮𝙤𝙪 𝙝𝙖𝙫𝙚 𝙖𝙣𝙮 𝙥𝙧𝙤𝙗𝙡𝙚𝙢 𝙟𝙪𝙨𝙩 𝙘𝙤𝙣𝙩𝙖𝙘𝙩 𝙢𝙚 🙏🙏</p>
 <div style="display: flex; justify-content: center; height: 5vh;"> <button style="background-color:#FF0042; color:white; padding:5px 30px; font-size:16px; border-radius: 20px;"><a href="https://t.me/team_hiddens_bot" style="color:white; text-decoration:none;">𝗖𝗢𝗡𝗧𝗔𝗖𝗧 𝗨𝗦 🙏🙏</a></button> </div>
 </body>
 </html>
