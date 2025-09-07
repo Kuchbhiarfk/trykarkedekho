@@ -189,6 +189,19 @@ const firstcardsData = [
         "text": "BOOKS",
         "secondcards": [
             {
+                "text": "Avi",
+                "subcards": [
+                    {
+                        "text": "PHYSICS",
+                        "url": " https://dusra-aur.github.io/servertokens/?token=Z2V0LS00MzEzMzI4ODM2MjQzNy0yNTgtMjU4"
+                    }
+                ]
+            },
+            {
+                "text": "Cengage",
+                "subcards": []
+            },
+            {
                 "text": "ABHISHEK",
                 "subcards": [
                     {
@@ -198,10 +211,6 @@ const firstcardsData = [
                 ]
             }
         ]
-    },
-    {
-        "text": "BOOKS",
-        "secondcards": []
     },
     {
         "text": "NOTES",
@@ -218,19 +227,21 @@ const firstcardsData = [
         ]
     },
     {
-        "text": "NOTES",
-        "secondcards": []
-    },
-    {
         "text": "TESTS",
-        "secondcards": []
-    },
-    {
-        "text": "TESTS",
-        "secondcards": []
+        "secondcards": [
+            {
+                "text": "COMPETISHUB",
+                "subcards": [
+                    {
+                        "text": "CLASS 11th",
+                        "url": " https://dusra-aur.github.io/servertokens/?token=Z2V0LS00MzEyNTg5MzcxMzQ5Ny05NDEyNy05NDI1Ng"
+                    }
+                ]
+            }
+        ]
     }
 ];
-        function createCard(cardData, isSecondCard = false) {
+       function createCard(cardData, isSecondCard = false) {
     const card = document.createElement('div');
     card.className = 'card';
     card.innerHTML = `
